@@ -1,0 +1,41 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+  inteiro vetor[10]
+  inteiro i
+  inteiro soma
+  real media
+
+  // Leitura dos números do vetor
+  para(i=1; i<10; i++)
+    escreva("\n Digite o número ", i, ":")
+    leia(vetor[i])
+  	limpa()
+  escreva("Os elementos nos índices ímpares do vetor são:")
+  para(i=1; i<10; i++){
+    se(i%2 !=0)
+      escreva(vetor[i], " ")
+      limpa()
+  }
+
+  escreva("Os elementos do vetor que são números pares são:")
+   para(i=0; i<=9; i++){
+   	se((i%2) == 0){
+      escreva(vetor[i], " ")
+      
+   }
+
+  soma = 0
+  para(i=0; i<=9; i++){
+    soma = soma + vetor[i]
+  escreva("A soma de todos os elementos do vetor é:", soma)
+  }
+
+  media = soma / 10
+  escreva("A média de todos os elementos do vetor é:", media)
+}
+}
+}
